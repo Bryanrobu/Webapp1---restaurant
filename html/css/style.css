@@ -1,0 +1,208 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-margin {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gerecht-item {
+    width: 22vw;
+    height: auto;
+    gap: 1vw;
+    background-color: #D9D9D9;
+    padding: 1vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gerecht-id {
+    font-size: 0.75vw;
+}
+
+.gerecht-naam {
+    font-size: 1.25vw;
+}
+
+.gerecht-beschrijving {
+    font-size: 0.75vw;
+}
+
+.gerecht-prijs {
+    font-size: 1vw;
+}
+
+.generale-spacer {
+    width: 90vw;
+    justify-content: space-evenly;
+    gap: 3vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+.login-text {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3vw;
+}
+
+.login-form {
+    width: 22.5vw;
+    height: 25vw;
+    background-color: #EFC68D;
+    margin: 0 auto;
+    border-radius: 2vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-input {
+    height: 2.5vw;
+    width: 10vw;
+    border-radius: 2vw;
+    border: black 0.1vw solid;
+    padding-left: 1vw;
+    background-color: #D9D9D9;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8vw;
+}
+
+.submit-login {
+    margin-bottom: 0.5vw;
+    width: 7.5vw;
+    height: 2vw;
+    border-radius: 2vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1vw;
+}.submit-login:hover {
+    cursor: pointer;
+    background-color: #D9D9D9;
+}
+
+.headbar {
+    width: 100vw;
+    height: 10vw;
+    background-color: #EFC68D;
+    border-bottom: #EC4C1D solid 1vw;
+    gap: 10vw;
+    margin-bottom: 10vh;
+}
+
+.nav-list {
+    gap: 15vw;
+}
+
+.nav-button {
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #EC4C1D;
+}.nav-button:hover {
+    text-decoration-line: underline;
+}
+
+.logo {
+    height: 10vw;
+}
+
+.zoekbox {
+    gap: 1vw;
+}
+
+.filteren {
+    border: black solid 0.15vw;
+    border-radius: 2vw;
+    padding-left: 1.5vw;
+    font-size: 2vw;
+    height: 3vw;
+    width: 60vw;
+    margin: 0 auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.zoeken {
+    width: 10vw;
+    height: 3vw;
+    border: black solid 0.15vw;
+    border-radius: 2vw;
+    margin: 0 auto;
+    margin-bottom: 2vw;
+    font-size: 1.2vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}.zoeken:hover {
+    cursor: pointer;
+    background-color: #D9D9D9;
+}
+
+.form-text {
+    font-size: 1vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-box {
+    width: 15vw;
+    height: 2vw;
+    border-radius: 2vw;
+    padding-left: 1vw;
+    border: black solid 0.15vw;
+}
+
+.form-box-beschrijving {
+    width: 15vw;
+    height: 6vw;
+    border-radius: 2vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    border: black solid 0.15vw;
+}
+
+.form-knop {
+    width: 7.5vw;
+    height: 2vw;
+    border: black solid 0.15vw;
+    border-radius: 2vw;
+    font-size: 0.9vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}.form-knop:hover {
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+.form {
+    gap: 0.5vw;
+    justify-content: flex-start;
+}
+
+.admin-formulieren {
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-bottom: 3vw;
+}
