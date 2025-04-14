@@ -13,8 +13,8 @@ class db {
         $this->pdo = new PDO("mysql:host=$host;dbname=$db", $user, $password);
     }
 
-    public function get_users() {
-        $sql = "SELECT * FROM users ORDER BY id ASC";
+    public function get_users($name) {
+        $sql = "SELECT * FROM users WHERE user='$name'";
         return $this->pdo->query($sql);
     }
    
