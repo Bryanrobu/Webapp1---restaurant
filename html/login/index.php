@@ -43,7 +43,7 @@ $is_logged_in = $_SESSION["logged_in"] ?? false;
     </header>
 
     <section class="generale-spacer">
-        <form class="login-form column" action="/php/login.php" method="POST">
+        <form class="login-form column" action="/process/login.php" method="POST">
             <div class="column">
                 <h1 class="login-text">User</h1>
                 <input type="text" class="login-input" name="username" id="username" required placeholder="Username">

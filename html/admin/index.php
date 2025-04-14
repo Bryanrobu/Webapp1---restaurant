@@ -51,7 +51,7 @@ if (!$is_logged_in) {
 
     <div class="admin-formulieren row">
 
-        <form method="POST" action="/php/toevoegen.php" class="form center column">
+        <form method="POST" action="/process/toevoegen.php" class="form center column">
             <h1 class="form-text center">Product Toevoegen</h1>
             <label class="form-text">Productnaam:</label>
             <input type="text" name="naam" class="form-box" required>
@@ -65,7 +65,7 @@ if (!$is_logged_in) {
             <button type="submit" name="toevoegen" class="form-knop">Toevoegen</button>
         </form>
 
-        <form method="POST" action="/php/veranderen.php" class="form center column">
+        <form method="POST" action="/process/veranderen.php" class="form center column">
             <h1 class="form-text center">Product Aanpassen</h1>
             <label class="form-text">Product-ID:</label>
             <input type="number" name="id" class="form-box" required>
@@ -82,7 +82,7 @@ if (!$is_logged_in) {
             <button type="submit" name="toevoegen" class="form-knop">Aanpassen</button>
         </form>
 
-        <form method="POST" action="/php/verwijderen.php" class="form center column">
+        <form method="POST" action="/process/verwijderen.php" class="form center column">
             <h1 class="form-text center">Product Verwijderen</h1>
             <label class="form-text">Product-ID:</label>
             <input type="number" name="id" class="form-box" required>
@@ -92,7 +92,7 @@ if (!$is_logged_in) {
 
     </div>
     <?php
-    include("../php/db.php");
+    include("../process/db.php");
     $sql = "SELECT * FROM gerechten";
 
     $db = new db();
