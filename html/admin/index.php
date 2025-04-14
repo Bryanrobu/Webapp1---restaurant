@@ -39,7 +39,7 @@ if (!$is_logged_in) {
                 <li>
                     <?php
                     if ($is_logged_in) {
-                        echo '<a href="/php/logout.php" class="nav-button">logout</a>';
+                        echo '<a href="/process/logout.php" class="nav-button">logout</a>';
                     } else {
                         echo '<a href="/login" class="nav-button">login</a>';
                     }
