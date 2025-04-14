@@ -9,7 +9,7 @@ $is_logged_in = $_SESSION["logged_in"] ?? false;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | Spicy bite</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
