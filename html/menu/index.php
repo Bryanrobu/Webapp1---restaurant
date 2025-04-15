@@ -45,7 +45,7 @@ $is_logged_in = $_SESSION["logged_in"] ?? false;
     <?php
 
 
-    include("../php/db.php");
+    include("../process/db.php");
     $sql = "SELECT * FROM gerechten";
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
