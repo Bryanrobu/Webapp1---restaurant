@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $db = new db();
     $users = $db->get_users($user);
-
+    
     $row = $users->fetch();
     
     if ($row == null) {
