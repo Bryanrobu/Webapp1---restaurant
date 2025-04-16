@@ -44,21 +44,25 @@ $is_logged_in = $_SESSION["logged_in"] ?? false;
 
     <?php
 
-
     include("../process/db.php");
-    $sql = "SELECT * FROM gerechten";
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $search = $_POST["search"];
-        $sql .= " WHERE naam LIKE '%" . $search . "%'";
-    }
-
 
     $db = new db();
 
     $conn = $db->get_connection();
 
-    $result = $conn->query($sql);
+    $result = [];
+
+    $sql = "SELECT * FROM gerechten";
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $search = "%" . $_POST["search"] . "%";
+        $sql = "SELECT * FROM gerechten WHERE naam LIKE :search";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute(['search' => $search]);
+        $result = $stmt->fetchAll();
+    }
+    
+
     $template = '
     <div class="gerecht-item space-between column">
         <div>

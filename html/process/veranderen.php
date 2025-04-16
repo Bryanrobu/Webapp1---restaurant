@@ -22,6 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "UPDATE gerechten SET naam = ?, omschrijving = ?, prijs = ? WHERE id = ?";
     $stmt = $conn->prepare($sql);
 
-    $stmt->execute([$naam, $beschrijving, $prijs, $id]);
+    $stmt->execute([
+        $naam, $beschrijving, $prijs, $id
+    ]);
     header("location: ../admin");
 }

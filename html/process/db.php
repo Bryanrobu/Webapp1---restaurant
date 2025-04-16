@@ -9,13 +9,14 @@ class db {
         $db = "mydatabase";
         $user = "user";
         $password = "password";
- 
         $this->pdo = new PDO("mysql:host=$host;dbname=$db", $user, $password);
     }
 
     public function get_users($name) {
-        $sql = "SELECT * FROM users WHERE user='$name'";
-        return $this->pdo->query($sql);
+        $sql = "SELECT * FROM users WHERE user = :name";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute(['name' => $name]);
+        return $stmt->fetchAll();
     }
    
     public function get_connection(): PDO {

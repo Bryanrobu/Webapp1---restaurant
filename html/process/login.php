@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $db = new db();
     $users = $db->get_users($user);
     
-    $row = $users->fetch();
+    $row = $users[0] ?? null;
     
     if ($row == null) {
         header("location: /");
